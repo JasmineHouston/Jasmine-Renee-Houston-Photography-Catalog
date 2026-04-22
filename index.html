@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine Renee Houston Photography Catalog</title>
+    <meta
+      name="description"
+      content="A photography catalog featuring California-inspired landscape and city prints for sale."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Fine Art Prints</p>
+        <h1>Jasmine Renee Houston Photography Catalog</h1>
+        <p class="hero-text">
+          A photography collection of Photos By Jasmine Renee Houston showing skylines, sunsets, an ocean and city lights.
+         </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls-section">
+        <div class="controls-header">
+          <h2>Browse the Collection</h2>
+          <p>
+            Search, filter, and sort the catalog to explore each photograph.
+          </p>
+        </div>
+
+        <div class="controls">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, location, or category..."
+          />
+
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="Skyline">Skyline</option>
+            <option value="The City">The City</option>
+            <option value="Sunset">Sunset</option>
+            <option value="Ocean Secrets">Ocean Secrets</option>
+            <option value="Hills">Hills</option>
+          </select>
+
+          <select id="sort-select">
+            <option value="default">Sort By</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="title-az">Title: A to Z</option>
+            <option value="title-za">Title: Z to A</option>
+          </select>
+
+          <button id="favorites-btn">Show Favorites Only</button>
+          <button id="featured-btn">Pick a Featured Print</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+
+        <div class="catalog-stats">
+          <p id="results-count">Showing 0 prints</p>
+          <p id="featured-output">Featured print: None selected yet.</p>
+        </div>
+      </section>
+
+      <section>
+        <div id="card-container" class="card-grid"></div>
+      </section>
+    </main>
+  </body>
+</html>
